@@ -1,11 +1,18 @@
 const Discord = require('discord.js')
 
-const config = require('../data/config.json');
 const client = new Discord.Client();
 
+const config = require('./config/config.json');
+
+const welcome = require('./commands/welcome.js');
+
 client.on("ready", () => {
-    console.log("Bot logged in")
+    console.log("The bot is running...");
+
+    welcome(client);
 })
+
+
 
 client.on("message", message => {
 
@@ -15,7 +22,7 @@ client.on("message", message => {
         message.reply("hello there");
     }
     
-    if (message.content.match(/ping/i)) {
+    if (message.content.match('ping')) {
         message.channel.send("pong");
     }
 
