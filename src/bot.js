@@ -1,9 +1,9 @@
 const Discord = require('discord.js')
 
-const config = require('../data/config.json');
+// const config = require('../data/config.json');
 const client = new Discord.Client();
 
-const prefix = process.env.PREFIX || config.prefix;
+const prefix = process.env.PREFIX
 
 client.on("ready", () => {
     console.log("Bot logged in")
@@ -38,4 +38,4 @@ client.on("message", message => {
     }
 })
 
-client.login(process.env.TOKEN_KEY || config.token)
+client.login(process.env.TOKEN_KEY)
