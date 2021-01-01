@@ -1,9 +1,7 @@
 const Discord = require('discord.js')
 
-// const config = require('../data/config.json');
+const config = require('../data/config.json');
 const client = new Discord.Client();
-
-const prefix = process.env.PREFIX
 
 client.on("ready", () => {
     console.log("Bot logged in")
@@ -26,7 +24,7 @@ client.on("message", message => {
     const args = words.slice(1);
     const line = args.join(" ");
        
-    if (message.content.startsWith(prefix)) {
+    if (message.content.startsWith(config.prefix)) {
         if (command === "fala") {
             message.channel.send(line)
         }
@@ -38,4 +36,4 @@ client.on("message", message => {
     }
 })
 
-client.login(process.env.TOKEN_KEY)
+client.login(process.env.TOKEN_KEY || config.token)
