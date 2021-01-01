@@ -1,5 +1,5 @@
 module.exports = client => {
-    client.on('guildMenberAt', member => {
+    client.on('guildMemberAdd', member => {
 
         const welcomeChannel = member.guild.channels.cache.get('781554552423448636')
         const infoChannel = member.guild.channels.cache.get('794654996653146152')
