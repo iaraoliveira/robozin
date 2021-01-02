@@ -35,21 +35,21 @@
 
   Um bot para discord, com comandos em português e múltiplas funcionalidades, dentre elas
 
-  [X] /fala - repetir falas
+ - [X] /fala - repetir falas
 
-  [X] /escolhe <parametro1> <parametro2> - escolher dentre argumentos passados ao comando
+ - [X] /escolhe <parametro1> <parametro2> - escolher dentre argumentos passados ao comando
 
-  [ ] /bomdia - fala uma mensagem de bom dia
+ - [ ] /bomdia - fala uma mensagem de bom dia
   
-  [ ] /boanoite - fala uma mensagem de bom dia
+ - [ ] /boanoite - fala uma mensagem de bom dia
 
-  [ ] /kick <user> - bane um usuário do server
+ - [ ] /kick <user> - bane um usuário do server
   
-  [ ] /volta <user> - convida o usuário de novo para o server
+ - [ ] /volta <user> - convida o usuário de novo para o server
 
-  [ ] /quote - faz uma citação ABNT da mensagem em "reply"
+ - [ ] /quote - faz uma citação ABNT da mensagem em "reply"
 
-  [ ] /totriste - manda algo pra animar a pessoa, seja um meme, um abraço virtual ou uma música
+ - [ ] /totriste - manda algo pra animar a pessoa, seja um meme, um abraço virtual ou uma música
 
 
   O bot também manda uma mensagem de boas vinda a cada vez que alguém entra no server
