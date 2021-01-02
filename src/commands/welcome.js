@@ -1,6 +1,7 @@
 module.exports = client => {
     client.on('guildMemberAdd', member => {
 
+        console.log(`Someone joined the server`);
         const welcomeChannel = member.guild.channels.cache.get('781554552423448636')
         const infoChannel = member.guild.channels.cache.get('794654996653146152')
 
