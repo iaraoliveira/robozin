@@ -36,7 +36,9 @@
 
   A discord bot with commands in brazilian portuguese and multiple functionalities, such as:
 
- - [X] /fala - to repeat messages
+ - [X] /fala - to repeat message (-d to delete initial message | -tts to enable speech-to-text)
+
+ - [X] /grita - to say "AAAAh" out loud
 
  - [X] /escolhe <parametro1> <parametro2> - choose between parameters
 
@@ -99,7 +101,7 @@ RUN THE APPLICATION
 
 ```sh
 
-$ npm run start
+$ npm start
 
 ```
 

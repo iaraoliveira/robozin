@@ -35,7 +35,9 @@
 
   Um bot para discord, com comandos em português e múltiplas funcionalidades, dentre elas
 
- - [X] /fala - repetir falas
+ - [X] /fala - repetir sua mensagem (-d apaga a mensagem original | -tts habilita a função speech-to-text)
+
+ - [X] /grita - diz "AAAAh" em voz alta
 
  - [X] /escolhe <parametro1> <parametro2> - escolher dentre argumentos passados ao comando
 
@@ -96,7 +98,7 @@ EXECUTE A APLICAÇÃO
 
 ```sh
 
-$ npm run start
+$ npm start
 
 ```
 
