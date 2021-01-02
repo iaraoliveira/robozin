@@ -37,17 +37,21 @@
   A discord bot with commands in brazilian portuguese and multiple functionalities, such as:
 
   [X] /fala - to repeat messages
+
   [X] /escolhe <parametro1> <parametro2> - choose between parameters
 
   [ ] /bomdia - a good morning message
+
   [ ] /boanoite - a good night message
 
   [ ] /kick <user> - to ban an user from the server
+
   [ ] /volta <user> - to reinvite the user to the server
 
   [ ] /quote - quote a message when replied
 
   [ ] /totriste - send a meme, a virtual hug or something to cheer the person up
+
 
   The bot also welcomes someone when it enters the server
 
