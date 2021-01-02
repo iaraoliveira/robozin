@@ -16,4 +16,9 @@ module.exports = client => {
         welcomeChannel.send(message1);
         welcomeChannel.send(message2);
     })
+    // client.on('message', message => {
+    //     if (!message.author.bot) return;
+
+    // }
+
 }
