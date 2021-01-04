@@ -14,4 +14,6 @@ client.on("ready", () => {
     chat(client, config);
 })
 
+client.on('error', console.error);
+
 client.login(process.env.TOKEN_KEY || config.token)
