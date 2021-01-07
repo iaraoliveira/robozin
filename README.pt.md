@@ -38,15 +38,17 @@
 
  - [X] /grita - diz "AAAAh" em voz alta
 
- - [X] /escolhe <parametro1> <parametro2> - escolher dentre argumentos passados ao comando
+ - [X] /escolhe `parametro1` `parametro2` - escolher dentre argumentos passados ao comando
+
+   [X] /enquete "`pergunta`" "`resposta1`" "`resposta2`" - cria uma enquete e permite que os usuários votem
 
  - [ ] /bomdia - fala uma mensagem de bom dia
   
  - [ ] /boanoite - fala uma mensagem de bom dia
 
- - [ ] /kick <user> - bane um usuário do server
+ - [ ] /kick `usuário` - bane um usuário do server
   
- - [ ] /volta <user> - convida o usuário de novo para o server
+ - [ ] /volta `usuário` - convida o usuário de novo para o server
 
  - [ ] /quote - faz uma citação ABNT da mensagem em "reply"
 

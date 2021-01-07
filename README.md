@@ -40,15 +40,17 @@
 
  - [X] /grita - to say "AAAAh" out loud
 
- - [X] /escolhe <parametro1> <parametro2> - choose between parameters
+ - [X] /escolhe `param1` `param2` - choose between parameters
+
+ - [X] /enquete "`question`" "`answer1`" "`answer2`" - to create a poll and let users vote
 
  - [ ] /bomdia - a good morning message
 
  - [ ] /boanoite - a good night message
 
- - [ ] /kick <user> - to ban an user from the server
+ - [ ] /kick `user` - to ban an user from the server
 
- - [ ] /volta <user> - to reinvite the user to the server
+ - [ ] /volta `user` - to reinvite the user to the server
 
  - [ ] /quote - quote a message when replied
 
