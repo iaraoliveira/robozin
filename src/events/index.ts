@@ -11,11 +11,4 @@
  * DO NOT export command classes using default
  */
 
-export * from './scripts/greetCommand'
-export * from './scripts/helpCommand'
-export * from './scripts/poolCommand'
-export * from './scripts/timeCommand'
-export * from './scripts/pingCommand'
-export * from './scripts/loudCommand'
-export * from './scripts/repeatCommand'
-export * from './scripts/chooseCommand'
+export * from './scripts/welcomeEvent'

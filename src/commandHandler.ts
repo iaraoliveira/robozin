@@ -11,7 +11,6 @@ import {
 } from './commands'
 import Command from './models/commandInterface'
 import { CommandParser } from './models/commandParser'
-
 export default class CommandHandler {
   private commands: Command[]
 
