@@ -42,13 +42,13 @@
 
  - [X] ;greet || ;hello || ;oi - say "hello" to the bot
 
- - [ ] /fala - to repeat message (-d to delete initial message | -tts to enable speech-to-text)
+ - [ ] ;fala - to repeat message (-d to delete initial message | -tts to enable speech-to-text)
 
- - [ ] /grita - to say "AAAAh" out loud
+ - [ ] ;grita - to say "AAAAh" out loud
 
- - [ ] /escolhe `param1` `param2` - choose between parameters
+ - [ ] ;escolhe `param1` `param2` - choose between parameters
 
- - [ ] /quote - quote a message when replied
+ - [ ] ;quote - quote a message when replied
 
 
   The bot also welcomes someone when it enters the server

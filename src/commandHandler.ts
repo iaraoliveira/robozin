@@ -27,8 +27,6 @@ export default class CommandHandler {
       command.commandNames.includes(commandParser.parsedCommandName)
     )
 
-    console.log(matchedCommand);
-
     if (!matchedCommand) {
       await message.channel.send(
         `I don't recognize that command. Try ${this.prefix}help.`
