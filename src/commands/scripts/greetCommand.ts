@@ -9,6 +9,6 @@ export class GreetCommand implements Command {
   }
 
   async run(message: Message): Promise<void> {
-    await message.channel.send(`hello, ${message.author.toString()}`);
+    await message.channel.send(`hello, ${message.author.toString()}`)
   }
 }

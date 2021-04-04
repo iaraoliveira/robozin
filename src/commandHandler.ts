@@ -31,19 +31,19 @@ export default class CommandHandler {
       await message.channel.send(
         `I don't recognize that command. Try ${this.prefix}help.`
       )
-
-    } else if (commandParser.parsedCommandName === 'help' || commandParser.parsedCommandName === 'ajuda') {
+    } else if (
+      commandParser.parsedCommandName === 'help' ||
+      commandParser.parsedCommandName === 'ajuda'
+    ) {
       const commandsNames = this.commands.map((command) =>
         typeof command.commandNames === 'string'
           ? command.commandNames
           : command.commandNames.join(', ')
       )
       await matchedCommand.run(message, commandsNames)
-
     } else if (commandParser.args.includes('help')) {
       const helpMessage = matchedCommand.help(this.prefix)
       await message.channel.send(helpMessage)
-
     } else {
       await matchedCommand.run(message).catch((error) => {
         message.channel.send(
