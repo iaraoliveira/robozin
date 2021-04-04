@@ -1,5 +1,5 @@
 import { Message } from 'discord.js'
-import { GreetCommand, HelpCommand, TimeCommand } from './commands'
+import { GreetCommand, HelpCommand, TimeCommand, PoolCommand } from './commands'
 import Command from './models/commandInterface'
 import { CommandParser } from './models/commandParser'
 
@@ -9,7 +9,7 @@ export default class CommandHandler {
   private readonly prefix: string
 
   constructor(prefix: string) {
-    const commandClasses = [HelpCommand, GreetCommand, TimeCommand]
+    const commandClasses = [HelpCommand, GreetCommand, TimeCommand, PoolCommand]
 
     this.commands = commandClasses.map((commandClass) => new commandClass())
     this.prefix = prefix
@@ -27,21 +27,25 @@ export default class CommandHandler {
       command.commandNames.includes(commandParser.parsedCommandName)
     )
 
+    console.log(matchedCommand);
+
     if (!matchedCommand) {
       await message.channel.send(
         `I don't recognize that command. Try ${this.prefix}help.`
       )
-    } else if (commandParser.parsedCommandName === 'help') {
+
+    } else if (commandParser.parsedCommandName === 'help' || commandParser.parsedCommandName === 'ajuda') {
       const commandsNames = this.commands.map((command) =>
         typeof command.commandNames === 'string'
           ? command.commandNames
           : command.commandNames.join(', ')
       )
-
       await matchedCommand.run(message, commandsNames)
+
     } else if (commandParser.args.includes('help')) {
       const helpMessage = matchedCommand.help(this.prefix)
       await message.channel.send(helpMessage)
+
     } else {
       await matchedCommand.run(message).catch((error) => {
         message.channel.send(

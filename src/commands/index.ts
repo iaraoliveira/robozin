@@ -11,6 +11,7 @@
  * DO NOT export command classes using default
  */
 
-export * from './greetCommand'
-export * from './timeCommand'
-export * from './helpCommand'
+export * from './scripts/greetCommand'
+export * from './scripts/helpCommand'
+export * from './scripts/poolCommand'
+export * from './scripts/timeCommand'

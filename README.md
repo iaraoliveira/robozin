@@ -83,7 +83,7 @@
 7. To get you started the template consist of two commands `greet` and `time` to test your bot, go to any text channel of your server and type in `;greet`, you'll see your bot reply as such
    ![image](https://user-images.githubusercontent.com/24829816/87232040-018dbe80-c3cd-11ea-9a9e-1c7f05d60a08.png)
 
-8. To Add more commands you must add a new class in `src/commands` folder taking into reference `greetCommand.ts` file, then you should export the class using the `src/commands/index.ts` file so you can easily import it from your `src/CommandHandler.ts`.
+8. To Add more commands you must add a new class in `src/commands/scripts` folder taking into reference `greetCommand.ts` file, then you should export the class using the `src/commands/index.ts` file so you can easily import it from your `src/CommandHandler.ts`.
 
 9. You can update the "prefix" ( `;` ) of the bot from the `src/config/botConfig.ts` file.
 
