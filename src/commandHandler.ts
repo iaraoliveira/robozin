@@ -1,5 +1,14 @@
 import { Message } from 'discord.js'
-import { GreetCommand, HelpCommand, TimeCommand, PoolCommand } from './commands'
+import {
+  GreetCommand,
+  HelpCommand,
+  TimeCommand,
+  PoolCommand,
+  PingCommand,
+  LoudCommand,
+  RepeatCommand,
+  ChooseCommand,
+} from './commands'
 import Command from './models/commandInterface'
 import { CommandParser } from './models/commandParser'
 
@@ -9,7 +18,16 @@ export default class CommandHandler {
   private readonly prefix: string
 
   constructor(prefix: string) {
-    const commandClasses = [HelpCommand, GreetCommand, TimeCommand, PoolCommand]
+    const commandClasses = [
+      HelpCommand,
+      GreetCommand,
+      TimeCommand,
+      PoolCommand,
+      PingCommand,
+      LoudCommand,
+      RepeatCommand,
+      ChooseCommand,
+    ]
 
     this.commands = commandClasses.map((commandClass) => new commandClass())
     this.prefix = prefix
@@ -22,6 +40,7 @@ export default class CommandHandler {
     }
 
     const commandParser = new CommandParser(message, this.prefix)
+    const args = commandParser.args
 
     const matchedCommand = this.commands.find((command) =>
       command.commandNames.includes(commandParser.parsedCommandName)
@@ -41,11 +60,11 @@ export default class CommandHandler {
           : command.commandNames.join(', ')
       )
       await matchedCommand.run(message, commandsNames)
-    } else if (commandParser.args.includes('help')) {
+    } else if (args.includes('help')) {
       const helpMessage = matchedCommand.help(this.prefix)
       await message.channel.send(helpMessage)
     } else {
-      await matchedCommand.run(message).catch((error) => {
+      await matchedCommand.run(message, args).catch((error) => {
         message.channel.send(
           `'${this.echoMessage(message)}' failed because of ${error}`
         )

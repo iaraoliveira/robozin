@@ -6,10 +6,10 @@ export class PoolCommand implements Command {
   commandNames = ['pool', 'enquete']
 
   help(commandPrefix: string): string {
-    return `Você pode usar '${commandPrefix}greet', '${commandPrefix}hello' ou '${commandPrefix}oi' para me cumprimentar.`
+    return `Você pode criar uma enquete usando '${commandPrefix}pool' ou '${commandPrefix}enquete'. PS.: Só não esquece das "aspas" ;).`
   }
 
-  async run(message: Message): Promise<void> {
+  async run(message: Message, args: string[]): Promise<void> {
     const numberEmojis = [
       '1️⃣',
       '2️⃣',
@@ -24,8 +24,6 @@ export class PoolCommand implements Command {
     ]
     const thumbsEmojis = ['👍', '👎']
 
-    const commandParser = new CommandParser(message, ' ')
-    let args = commandParser.args
     const messageText = args.join(' ')
     args = this.parseToArgs(messageText)
 

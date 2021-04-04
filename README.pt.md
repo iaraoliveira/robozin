@@ -40,11 +40,11 @@
 
  - [X] ;greet || ;hello || ;oi - diga "oi" para o bot
 
- - [ ] ;fala - repetir sua mensagem (-d apaga a mensagem original | -tts habilita a função speech-to-text)
+ - [X] ;fala - repetir sua mensagem (-d apaga a mensagem original | -tts habilita a função speech-to-text)
 
- - [ ] ;grita - diz "AAAAh" em voz alta
+ - [X] ;grita - diz "AAAAh" em voz alta
 
- - [ ] ;escolhe `parametro1` `parametro2` - escolher dentre argumentos passados ao comando
+ - [X] ;escolhe `parametro1` `parametro2` - escolher dentre argumentos passados ao comando
 
  - [ ] ;quote - faz uma citação ABNT da mensagem em "reply"
 

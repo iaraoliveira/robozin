@@ -1,6 +1,5 @@
 import Command from '../../models/commandInterface'
 import { Message } from 'discord.js'
-
 export class GreetCommand implements Command {
   commandNames = ['greet', 'hello', 'oi']
 
