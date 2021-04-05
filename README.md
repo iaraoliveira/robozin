@@ -21,14 +21,6 @@
  <a href="#author">Author</a>
 </p>
 
-
-<br/>
-<p>
-  <strong>WARNING:</strong> This project is under contruction.
-</p>
-<br/>
-
-
 <br/>
 <a name="about"/>
 
@@ -36,19 +28,22 @@
 
   A discord bot with commands in both english and brazilian portuguese and multiple functionalities, such as:
 
+  
+  COMANDOS
+
  - [X] ;help || ;ajuda - show available commands
 
  - [X] ;pool || ;enquete "`question`" "`answer1`" "`answer2`" - to create a poll and let users vote
 
  - [X] ;greet || ;hello || ;oi - say "hello" to the bot
 
- - [X] ;fala - to repeat message (-d to delete initial message | -tts to enable speech-to-text)
+ - [X] ;repeat || ;fala - to repeat message (-d to delete initial message | -tts to enable speech-to-text)
 
- - [X] ;grita - to say "AAAAh" out loud
+ - [X] ;loud || ;grita - to say "AAAAh" out loud
 
- - [X] ;escolhe `param1` `param2` - choose between parameters
+ - [X] ;choose || ;escolhe `param1` `param2` - choose between parameters
 
- - [ ] ;quote - quote a message when replied
+ - [ ] ;quote || ;frase - quote a message when replied
 
 
   The bot also welcomes someone when it enters the server

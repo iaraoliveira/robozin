@@ -19,20 +19,15 @@
  <a href="#autor">Autor</a>
 </p>
 
-
-<br/>
-<p>
-  <strong>ATENÇÃO:</strong> A implementação deste projeto está em andamento.
-</p>
-<br/>
-
-
 <br/>
 <a name="sobre"/>
 
 ## :bulb: Sobre o projeto
 
-  Um bot para discord, com comandos em português e inglês e múltiplas funcionalidades, dentre elas
+  Um bot para discord, com comandos em português e inglês e múltiplas funcionalidades, dentre elas:
+
+
+  COMANDOS
 
  - [X] ;help || ;ajuda - mostra a lista de comandos disponíveis
 
@@ -40,16 +35,16 @@
 
  - [X] ;greet || ;hello || ;oi - diga "oi" para o bot
 
- - [X] ;fala - repetir sua mensagem (-d apaga a mensagem original | -tts habilita a função speech-to-text)
+ - [X] ;repeat || ;fala - repetir sua mensagem (-d apaga a mensagem original | -tts habilita a função speech-to-text)
 
- - [X] ;grita - diz "AAAAh" em voz alta
+ - [X] ;loud || ;grita - diz "AAAAh" em voz alta
 
- - [X] ;escolhe `parametro1` `parametro2` - escolher dentre argumentos passados ao comando
+ - [X] ;choose || ;escolhe `parametro1` `parametro2` - escolher dentre argumentos passados ao comando
 
- - [ ] ;quote - faz uma citação ABNT da mensagem em "reply"
+ - [ ] ;quote || ;frase - faz uma citação ABNT da mensagem em "reply"
 
 
-  O bot também manda uma mensagem de boas vinda a cada vez que alguém entra no server
+  O bot também manda uma mensagem de boas vindas a cada vez que alguém entra no server
 
 <br/>
 <a name="tecnologias"/>
