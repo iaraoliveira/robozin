@@ -8,6 +8,7 @@ import {
   LoudCommand,
   RepeatCommand,
   ChooseCommand,
+  BaitAndHookCommand,
 } from './commands'
 import Command from './models/commandInterface'
 import { CommandParser } from './models/commandParser'
@@ -26,6 +27,7 @@ export default class CommandHandler {
       LoudCommand,
       RepeatCommand,
       ChooseCommand,
+      BaitAndHookCommand,
     ]
 
     this.commands = commandClasses.map((commandClass) => new commandClass())
